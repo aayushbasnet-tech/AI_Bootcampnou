@@ -1,0 +1,13 @@
+num=int(input("Enter any number: "))
+rev=0
+backup=num
+
+while(num>0):
+    rem=num%10
+    rev=rev*10+rem
+    num=num//10
+
+if(backup==rev):
+    print("Palindrome")
+else:
+    print("Not Palindrome")        
